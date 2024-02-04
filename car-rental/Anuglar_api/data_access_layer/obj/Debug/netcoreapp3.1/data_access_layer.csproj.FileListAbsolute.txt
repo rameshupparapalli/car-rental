@@ -1,0 +1,13 @@
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.csproj.AssemblyReference.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.AssemblyInfoInputs.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.AssemblyInfo.cs
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.csproj.CoreCompileInputs.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\bin\Debug\netcoreapp3.1\data_access_layer.deps.json
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\bin\Debug\netcoreapp3.1\data_access_layer.runtimeconfig.json
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\bin\Debug\netcoreapp3.1\data_access_layer.runtimeconfig.dev.json
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\bin\Debug\netcoreapp3.1\data_access_layer.dll
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\bin\Debug\netcoreapp3.1\data_access_layer.pdb
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.dll
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.pdb
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\data_access_layer\obj\Debug\netcoreapp3.1\data_access_layer.genruntimeconfig.cache

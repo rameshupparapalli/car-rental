@@ -1,0 +1,44 @@
+<div class="container my-5">
+    <h1 class="mb-3">Edit Groceries</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updatedcar()">
+                
+                <div class="carimg">
+                    <label for="carimage" class="form-label">Image</label>
+                    <input type="text" class="form-control" id="carimage" name="carimage" [(ngModel)]="cardetails.image">
+                </div>
+                <div class="mb-3">
+                    <label for="carid" class="form-label">CarID</label>
+                    <input type="text" class="form-control" id="carid" name="carid" [(ngModel)]="cardetails.carid">
+                </div>
+                <div class="mb-3">
+                    <label for="brand" class="form-label">Brand</label>
+                    <input type="text" class="form-control" id="brand" name="brand" [(ngModel)]="cardetails.brand">
+                </div>
+                <div class="mb-3">
+                    <label for="maker" class="form-label">Maker</label>
+                    <input type="text" class="form-control" id="maker" name="maker" [(ngModel)]="cardetails.maker">
+                </div>
+                <div class="mb-3">
+                    <label for="rentalprice" class="form-label">RentalPrice</label>
+                    <input type="number" class="form-control" id="rentalprice" name="rentalprice" [(ngModel)]="cardetails.rentalprice">
+                </div>
+                <!-- <div class="mb-3">
+                    <label for="availability" class="form-label">Availability</label>
+                    <input type="text" class="form-control" id="availability" name="availability" [(ngModel)]="cardetails.availability">
+                </div> -->
+                <div class="mb-3">
+                    <label for="status" class="form-label">Category</label>
+                    <select name="status"  class="dropdown"  id="status" name="status" [(ngModel)]="cardetails.availability">
+                        <option value="{{cardetails.availability}}">{{cardetails.availability}}</option>
+                        <option value="Available">Available</option>
+                        <option value="Booked">Booked</option>
+                      </select>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

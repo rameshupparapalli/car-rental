@@ -1,0 +1,91 @@
+<div class="tmaindiv" *ngIf="role==='user'">
+    <table class="table-container" >
+      <thead>
+        <tr>
+          <th>CAR ID</th>
+          <th>Maker</th>
+          <th>Brand</th>
+          <th>RentalPrice</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>No of Days</th>
+          <th>Total Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="bookingcars.length > 0; else noData">
+          <tr *ngFor="let item of bookingcars">
+            <!-- Only display the row if email matches token email -->
+            <ng-container *ngIf="item.email === fullEmail && item.isBooked==true">
+              <td>{{item.carid}}</td>
+              <td>{{item.maker}}</td>
+              <td>{{item.brand}}</td>
+              <td>{{item.rentalprice}}</td>
+              <td>{{item.startdate}}</td>
+              <td>{{item.enddate}}</td>
+              <td>{{item.noofdays}} Days</td>
+              <td>{{item.totalprice}}</td>
+              <ng-container *ngIf="item.request == 'request'">
+                <td><button ><a href="/booking" (click)="requestreturn(item)">{{item.request}}</a></button></td>
+              </ng-container>
+              <ng-container *ngIf="item.request == 'waiting'">
+                <td><button disabled class="waiting">{{item.request}}</button></td>
+              </ng-container>
+              <ng-container *ngIf="item.request == 'Accepted'">
+                <td><button disabled class="accepted">{{item.request}}</button></td>
+              </ng-container>
+            </ng-container>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noData>
+    <div class="no-data-message">No data available for this email.</div>
+  </ng-template>
+
+<ng-container *ngIf="role==='admin'">
+    <div class="tmaindiv">
+        <table class="table-container admintable" >
+          <thead>
+            <tr>
+              <th>CAR ID</th>
+              <th>Maker</th>
+              <th>Brand</th>
+              <th>RentalPrice</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>No of Days</th>
+              <th>Total Price</th>
+              <th>User Email</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngIf="bookingcars.length > 0; else noData">
+              <tr *ngFor="let item of bookingcars">
+                <!-- Only display the row if email matches token email -->
+                <ng-container *ngIf=" item.isBooked==true" >
+                  <td>{{item.carid}}</td>
+                  <td>{{item.maker}}</td>
+                  <td>{{item.brand}}</td>
+                  <td>{{item.rentalprice}}</td>
+                  <td>{{item.startdate}}</td>
+                  <td>{{item.enddate}}</td>
+                  <td>{{item.noofdays}} Days</td>
+                  <td>{{item.totalprice}}</td>
+                  <td>{{item.email}}</td>
+                
+                </ng-container>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+      <ng-template #noData>
+        <div class="no-data-message">No data available for this email.</div>
+      </ng-template>
+    
+</ng-container>
+  

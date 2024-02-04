@@ -1,0 +1,132 @@
+
+
+<ul class="cards">
+   <ng-container *ngIf="bookingcars.length > 0">
+     <ng-container  *ngFor="let item of bookingcars">
+
+        <ng-container *ngIf="item.email === fullEmail && item.request!='Accepted'">
+            <li class="cards__item">
+                <div class="card">
+                  <div >
+                      <img src={{item.image}} alt="" class="card__image ">
+                      
+
+                  </div>
+                  <div class="card__content">
+                    <!-- <div class="card__title">Flex</div>
+                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p> -->
+          
+                    <table >
+                      <tr>
+                        <td><strong>Car Maker</strong></td>
+                        <td>{{item.maker}}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Brand</strong></td>
+                        <td>{{item.brand}}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Car Id</strong></td>
+                        <td>{{item.carid}}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Rental Price</strong></td>
+                        <td>{{item.rentalprice}}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Start Date</strong></td>
+                        <td>{{item.startdate}}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>End Date</strong></td>
+                          <td>{{item.enddate}}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>No of Days</strong></td>
+                          <td>{{item.noofdays}}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Total Price</strong></td>
+                          <td>{{item.totalprice}}</td>
+                        </tr>
+                    </table>
+                    <div class="action-btn">
+                      <ng-container *ngIf="item.isBooked; else notBooked">
+                        <button class="btn btn--block card__btn success" disabled>Car is Already Booked</button>
+                      </ng-container>
+                      <ng-template #notBooked>
+                        
+                          <button class="btn btn--block card__btn success" (click)="booknow(item)">BOOK NOW</button>
+                          <button class="btn btn--block card__btn update" [routerLink]="['/useragreeupdate',item.id]">Update</button>
+                          <button class="btn btn--block card__btn delete" (click)="deleteBookedCar(item)" *ngIf="item.id">Delete</button>
+                        
+                      </ng-template>
+                    </div>
+                  </div>
+                </div>
+              </li>
+        </ng-container>
+      </ng-container>
+      <ng-container  *ngFor="let item of bookingcars">
+          <ng-container *ngIf="role === 'admin' && item.request!='Accepted'">
+              <li class="cards__item">
+                  <div class="card">
+                    <div >
+                        <img src={{item.image}} alt="" class="card__image ">
+                    </div>
+                    <div class="card__content">
+                      <table >
+                        <tr>
+                          <td><strong>Car Maker</strong></td>
+                          <td>{{item.maker}}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Brand</strong></td>
+                          <td>{{item.brand}}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Car Id</strong></td>
+                          <td>{{item.carid}}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Rental Price</strong></td>
+                          <td>{{item.rentalprice}}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Start Date</strong></td>
+                          <td>{{item.startdate}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>End Date</strong></td>
+                            <td>{{item.enddate}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>No of Days</strong></td>
+                            <td>{{item.noofdays}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Price</strong></td>
+                            <td>{{item.totalprice}}</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Email</strong></td>
+                            <td>{{item.email}}</td>
+                          </tr>
+                      </table>
+            
+                      <div class="action-btn">
+                        <button class="btn btn--block card__btn update" [routerLink]="['/useragreeupdate',item.id]">Update</button>
+                        <button class="btn btn--block card__btn delete"  (click)="deleteBookedCar(item)" *ngIf="item.id">Delete</button>
+            
+                      </div>
+                    </div>
+                  </div>
+                </li>
+          </ng-container>
+
+      </ng-container>
+   </ng-container>
+</ul>
+       
+
+

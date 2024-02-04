@@ -1,0 +1,45 @@
+
+
+
+<div class="main"  >
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search by Brand or Maker" (input)="onSearch()">
+    <input type="number" [(ngModel)]="minRentalPrice" placeholder="Minimum Rental Price" (input)="onSearch()">
+  </div>
+    <ul class="cards">
+      <ng-container  *ngFor="let item of filteredCars">
+        <li class="cards_item">
+          <div class="card" >
+            <div class="card_image"><img src={{item.image}}></div>
+            <div class="card_content">
+              <h2 class="card_title"> <span>Brand:</span>{{item.brand}}</h2>
+              <h2 class="card_title"> <span>Car ID:</span>{{item.carid}}</h2>
+              <p class="card_title"><span>Maker:</span>{{item.maker}}</p>
+              <p class="card_title"><span>RentalPrice:</span>{{item.rentalprice}}</p>
+              
+              
+              
+              <div class="btns">
+                <button class="btn card_btn update" [routerLink]="['/singlepage',item.id]" >Book Now</button>
+                
+              </div>
+              
+            </div>
+          </div>
+        </li>   
+
+      </ng-container>
+      
+      
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+

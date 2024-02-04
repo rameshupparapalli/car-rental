@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+a{
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #fff;
+    color: #007BFF;
+}
+.logout-button {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.logout-button:hover {
+    background-color: red;
+    color: #007BFF;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+}
+.main
+{
+    display: flex;
+    justify-content: space-around;
+}
+.cred
+{
+    display: flex;
+    padding-right: 50px;
+    justify-content: center;
+    height: auto;
+}
+.list
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.sub-headd
+{
+    margin: 20px;
+}
+.sub-headd:hover{
+   
+  text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+.email
+{
+    text-decoration: none !important;
+}

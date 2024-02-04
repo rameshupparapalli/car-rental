@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="sub">
+        <div class="heading">Login</div>
+        <hr class="first-line">
+        <hr class="second-line">
+        <form [formGroup]="loginForm">
+            <div class="form-group" [class.error]="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">
+             <input formControlName="email" type="email" placeholder="Enter your Email Address" id="email">
+            </div>
+            <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')" class="text-danger">*username is Required</small>
+            <div class="form-group" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">
+                <input formControlName="password" type="password" placeholder="Enter your Password" id="pwd"  >
+            </div>
+            <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">*Password is Required</small>
+
+            <div class="sub-log">
+                <button (click)="onSubmit()" type="submit" class="button">Login</button>
+            </div>
+           
+
+            
+        </form>
+    </div>
+</div>

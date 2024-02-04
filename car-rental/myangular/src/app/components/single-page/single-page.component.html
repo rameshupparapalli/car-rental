@@ -1,0 +1,75 @@
+<div class="main-container">
+    <div class="sub">
+      <img src="{{cardetails.image}}" alt="">
+      
+      <table >
+        <tr>
+          <td><strong>Car Maker</strong></td>
+          <td>{{cardetails.maker}}</td>
+        </tr>
+        <tr>
+          <td><strong>Brand</strong></td>
+          <td>{{cardetails.brand}}</td>
+        </tr>
+        <tr>
+          <td><strong>Car Id</strong></td>
+          <td>{{cardetails.carid}}</td>
+        </tr>
+        <tr>
+          <td><strong>Rental Price</strong></td>
+          <td>{{cardetails.rentalprice}}</td>
+        </tr>
+        <tr>
+          <td><strong>Availability</strong></td>
+          <td>{{cardetails.availability}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <form class="subb" (ngSubmit)="bookcar()">
+
+
+        <input type="text" class="form-control" id="carimage" name="carimage" [(ngModel)]="cardetails.image" hidden>
+        <input type="text" class="form-control" id="carid" name="carid" [(ngModel)]="cardetails.carid" hidden>
+        <input type="text" class="form-control" id="brand" name="brand" [(ngModel)]="cardetails.brand" hidden>
+        <input type="text" class="form-control" id="maker" name="maker" [(ngModel)]="cardetails.maker" hidden>
+        <input type="number" class="form-control" id="rentalprice" name="rentalprice" [(ngModel)]="cardetails.rentalprice" hidden>
+        <input type="email" name="email" id="email" value="" [(ngModel)]="carbooking.email" hidden>
+
+        <div>
+          <label for="booking_date">Booking Date</label>
+          <input type="date"  name="booking_date" id="booking_date" [(ngModel)]="carbooking.startdate" required>
+          <div *ngIf="!carbooking.startdate && submitted" class="validation-message">Booking Date is required.</div>
+        </div>
+        <div>
+          <label for="return_date">Return Date</label>
+          <input type="date" name="return_date" id="return_date" [(ngModel)]="carbooking.enddate" required>
+          <div *ngIf="!carbooking.enddate && submitted" class="validation-message">Return Date is required.</div>
+        </div>
+        <p>Rental Price: <span>{{cardetails.rentalprice}}</span></p>
+        <p>No of Days: <span>{{duration()}}</span></p>
+        <p>Total Price: <span>{{TotalPrice()}}</span></p>
+        <button >Book Now</button>
+      </form>
+      
+  </div>
+  <h1 class="head">Not Available Dates</h1>
+  <div >
+    <div  class="datesmain">
+      <table class="datetable">
+        <tr >
+          <th class="tableth">Start Date</th>
+          <th class="tableth">End Date</th>
+        </tr>
+        <ng-container *ngFor="let item of bookingcars">
+          <tr *ngIf="cardetails.carid == item.carid && item.isBooked == true && (item.request == 'request' || item.request == 'waiting')">
+            <td>{{ item.startdate }}</td>
+            <td>{{ item.enddate }}</td>
+          </tr>
+        </ng-container>
+       
+      </table>
+    </div>
+  </div>
+  
+  

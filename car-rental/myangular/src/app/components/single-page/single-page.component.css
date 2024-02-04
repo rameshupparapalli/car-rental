@@ -1,0 +1,156 @@
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+     
+    
+  }
+  .sub {
+    
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px; 
+  }
+  .validation-message
+  {
+    color: red;
+  }
+  .sub img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+    .sub p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; 
+  }
+  
+  table tr td {
+    padding: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+
+
+
+
+  .subb {
+    
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 80px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 350px; 
+  }
+
+  form {
+    text-align: center;
+  }
+  
+ 
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  @media screen and (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      height: auto;
+      /* align-items: flex-start; */
+    }
+  
+    .sub {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .sub {
+      padding: 15px;
+    }
+  
+    .subb {
+        margin-top: 20px;
+      padding: 20px;
+      width: 90%
+    }
+  
+    table tr td {
+      padding: 5px;
+    }
+  }
+
+
+.head
+{
+  text-align: center;
+  margin: 30px;
+}
+.datetable{
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.datesmain{
+ 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tableth
+{
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+  

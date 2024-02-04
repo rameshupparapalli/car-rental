@@ -1,0 +1,13 @@
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\bin\Debug\netcoreapp3.1\Bussiness_layer.deps.json
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\bin\Debug\netcoreapp3.1\Bussiness_layer.dll
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\bin\Debug\netcoreapp3.1\Bussiness_layer.pdb
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\bin\Debug\netcoreapp3.1\data_access_layer.dll
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\bin\Debug\netcoreapp3.1\data_access_layer.pdb
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.csproj.AssemblyReference.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.AssemblyInfoInputs.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.AssemblyInfo.cs
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.csproj.CoreCompileInputs.cache
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.csproj.CopyComplete
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.dll
+C:\Users\upparapalliramesh\OneDrive - Nagarro\Desktop\car-rental\Anuglar_api\Bussiness_layer\obj\Debug\netcoreapp3.1\Bussiness_layer.pdb

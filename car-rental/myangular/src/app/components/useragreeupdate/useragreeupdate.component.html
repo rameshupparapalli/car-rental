@@ -1,0 +1,54 @@
+<div class="main-container">
+    <div class="sub">
+      <img src="{{cardata.image}}" alt="">
+      
+      <table >
+        <tr>
+          <td><strong>Car Maker</strong></td>
+          <td>{{cardata.maker}}</td>
+        </tr>
+        <tr>
+          <td><strong>Brand</strong></td>
+          <td>{{cardata.brand}}</td>
+        </tr>
+        <tr>
+          <td><strong>Car Id</strong></td>
+          <td>{{cardata.carid}}</td>
+        </tr>
+        <tr>
+          <td><strong>Rental Price</strong></td>
+          <td>{{cardata.rentalprice}}</td>
+        </tr>
+        <tr>
+          <td><strong>Availability</strong></td>
+          <td>{{cardata.totalprice}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <form class="subb" (ngSubmit)="updatedbookedcar()">
+
+
+        <input type="text" class="form-control" id="carimage" name="carimage" [(ngModel)]="cardata.image" hidden>
+        <input type="text" class="form-control" id="carid" name="carid" [(ngModel)]="cardata.carid" hidden>
+        <input type="text" class="form-control" id="brand" name="brand" [(ngModel)]="cardata.brand" hidden>
+        <input type="text" class="form-control" id="maker" name="maker" [(ngModel)]="cardata.maker" hidden>
+        <input type="number" class="form-control" id="rentalprice" name="rentalprice" [(ngModel)]="cardata.rentalprice" hidden>
+        <input type="email" name="email" id="email" value="" [(ngModel)]="cardata.email" hidden>
+
+        <div>
+          <label for="booking_date">Booking Date</label>
+          <input type="date" name="booking_date" id="booking_date" [(ngModel)]="cardata.startdate">
+        </div>
+        <div>
+          <label for="return_date">Return Date</label>
+          <input type="date" name="return_date" id="return_date" [(ngModel)]="cardata.enddate">
+        </div>
+        <p>Rental Price: <span>{{cardata.rentalprice}}</span></p>
+        <p>No of Days: <span>{{duration()}}</span></p>
+        <p>Total Price: <span>{{TotalPrice()}}</span></p>
+        <button >Update Now</button>
+      </form>
+      
+  </div>
+  
